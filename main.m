@@ -60,7 +60,7 @@ noiseVariance = 0.2;
 [x, y, t] = CreateGradDescLinRegData(noiseVariance, nOfPoints, xLeft, xRight, thetaTrue);
 y = OutliersAddition(y, numOutliers, 'maxDiff', maxDiff);
 
-% ============ Processing =============
+% == Processing ==
 if useCrossVal
     rng(1);
     nFolds = 5;
